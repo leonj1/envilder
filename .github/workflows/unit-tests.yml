@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   envilder-test:
-    runs-on: ubuntu-24.04
+    runs-on: [self-hosted, linux, x64]
     if: ${{ !github.event.pull_request.draft }}
     timeout-minutes: 30
 
